@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #8B0000;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    position: relative;
+}
+
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M50 10 Q70 20 80 40 T50 90 T20 40 Q30 20 50 10 Z" fill="none" stroke="%23FFD700" stroke-width="3"/></svg>');
+    background-size: 150px;
+    opacity: 0.15;
+    z-index: -1;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.title-img {
+    width: 90%;
+    max-width: 400px;
+    margin-bottom: 5px;
+}
+
+
+.info-img {
+    width: 100%;
+    max-width: 700px;
+    margin-bottom: 100px; 
+}
+
+
+.tomiris-text {
+    max-width: 90%;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 15px; 
+    color: #f3d7a4;
+}
+
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+
+.btn {
+    display: inline-block;
+    width: 90%;
+    max-width: 300px;
+    padding: 15px;
+    font-size: 18px;
+    background-color: #f3d7a4;
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #FFA500;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
